@@ -14,7 +14,7 @@ function isHabitablePlanet(planet) {
     planet["koi_prad"] < 1.6
   );
 }
-
+ 
 /*
 CONST PROMISE = new promise((resolce, reject) => {
     resolve(42)
@@ -28,7 +28,7 @@ console.log(result)
 
 function loadPlanetsData() {
   return new Promise((resolve, reject) => {
-    fs.createReadStream(path.join(__dirname, '..', 'data', "kepler_data.csv"))
+    fs.createReadStream(path.join(__dirname, '..', '..', 'data', "kepler_data.csv"))
       .pipe(
         parse({
           comment: "#",
